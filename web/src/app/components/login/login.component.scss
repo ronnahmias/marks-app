@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .card {
+    width: 400px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  .login-button {
+    background-color: #253439;
+    color: white;
+
+    &:disabled {
+      background-color: #e7e1d9;
+    }
+  }
+  .mat-card {
+    padding: 50px;
+    .mat-card-header {
+      display: flex;
+      flex-direction: column;
+      ::ng-deep .mat-card-header-text {
+        margin-left: 0;
+      }
+      .logo-header-image {
+        background-image: url("../../../assets/logo1.png");
+        background-size: cover;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

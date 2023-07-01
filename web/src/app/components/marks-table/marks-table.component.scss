@@ -1,0 +1,86 @@
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #253439;
+
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+  }
+
+  .logout-button {
+    margin-left: auto;
+    background-color: #a52a2a;
+    color: white;
+  }
+
+  .clear-filter-button {
+    background-color: #0cc0df;
+  }
+}
+
+.full-width-table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  .table {
+    width: 100%;
+
+    .header-cell-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      row-gap: 10px;
+      .header-cell-content {
+        text-align: start;
+        cursor: move;
+      }
+      &.position-header {
+        margin-bottom: 50px;
+      }
+      input {
+        background-color: #e9ebec;
+        width: 200px;
+        border: none;
+      }
+    }
+
+    .header-cell-input {
+      text-align: start;
+    }
+  }
+
+  th {
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+  }
+
+  // ::ng-deep .mat-sort-header-arrow {
+  //   position: absolute;
+  //   right: 20px;
+  // }
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.table.cdk-drop-list-dragging th:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
