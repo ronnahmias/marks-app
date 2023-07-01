@@ -45,17 +45,17 @@ services:
     volumes:
       - data:/var/lib/postgresql/data
 
-  pg-admin:
-    container_name: vplan-pg-admin
-    image: dpage/pgadmin4:7
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@email.com
-      - PGADMIN_DEFAULT_PASSWORD=admin
-      - PGADMIN_LISTEN_PORT=5050
-    depends_on:
-      - postgres
-    ports:
-      - "5050:5050"
+  # pg-admin:
+  #   container_name: vplan-pg-admin
+  #   image: dpage/pgadmin4:7
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=admin@email.com
+  #     - PGADMIN_DEFAULT_PASSWORD=admin
+  #     - PGADMIN_LISTEN_PORT=5050
+  #   depends_on:
+  #     - postgres
+  #   ports:
+  #     - "5050:5050"
 
 volumes:
   data:
