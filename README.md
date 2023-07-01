@@ -9,6 +9,7 @@
 ## Running the App
 
 - run in terminal: `docker-compose up`
+- wait to all apps to start successfully
 - open browser: `localhost:4200`
 - login to the app using credentials
 
@@ -34,9 +35,9 @@
 
 ## Example ENV:
 
-- `DB_DATABASE=postgres`
-- `DB_HOST=host.docker.internal`
-- `DB_PORT=5432`
-- `DB_USERNAME=postgres`
-- `DB_PASSWORD=postgres`
-- `JWT_SECRET=secret`
+DB_DATABASE=postgres <br />
+DB_HOST=host.docker.internal <br />
+DB_PORT=5432 <br />
+DB_USERNAME=postgres <br />
+DB_PASSWORD=postgres <br />
+JWT_SECRET=secret
